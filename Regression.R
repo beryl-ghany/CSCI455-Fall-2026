@@ -1,16 +1,24 @@
-traini#Author:Beryl Ghany, Date:08/25/26, Purpose: Regression Analysis
+#Author:Beryl Ghany, Date:08/25/26, Purpose: Regression Analysis
 
 #Import dummy dataset
 training_data<-mtcars
 
-#Plot the data as a scater plot
+#Plot the data as a scatter plot
 scatter.smooth(x=training_data$disp,y=training_data$wt,main="SpeedVSdistance")
 
 # 50% split
-# 70% split
-# 90% split
+training_dataset <- mtcars[1:16,]
+test_dataset <- mtcars[17:32,]
 
-# Create a trainig dataset with 50% split
+# 70% split
+training_dataset <- mtcars[1:22,]
+test_dataset <- mtcars[23:32,]
+
+# 90% split
+training_dataset <- mtcars[1:29,]
+test_dataset <- mtcars[30:32,]
+
+# Create a training dataset with 50% split
 training_dataset<-training_data[1:16,]
 test_dataset<-training_data[17:32,]
 
