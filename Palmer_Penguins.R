@@ -1,7 +1,5 @@
 # Author: Ghany, Date: 11/10/2026, Purpose: LDA Model on Palmer Penguins
 
-# Install caret if not already installed
-
 # Load the package caret
 library(caret)
 
